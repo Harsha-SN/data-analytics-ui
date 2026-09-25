@@ -18,11 +18,11 @@ st.set_page_config(
 # CONFIGURATION
 # ============================================================
 
-FLASK_API_URL = "http://127.0.0.1:5000"
-GUEST_TOKEN_API = "http://127.0.0.1:5001/api/superset/guest-token"
-SUPERSET_URL = "http://127.0.0.1:8088"
+FLASK_API_URL = st.secrets["FLASK_API_URL"]
+GUEST_TOKEN_API = st.secrets["GUEST_TOKEN_API"]
+SUPERSET_URL = st.secrets["SUPERSET_URL"]
 
-SUPERSET_DASHBOARD_UUID = "e7023b4c-9459-44c8-b672-0e3adefdbfc1"
+SUPERSET_DASHBOARD_UUID = st.secrets["SUPERSET_DASHBOARD_UUID"]
 
 # ============================================================
 # PAGE CSS
