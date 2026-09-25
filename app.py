@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import requests
 import pandas as pd
 
@@ -420,10 +419,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-components.html(
+st.iframe(
     embed_html,
     height=1350,
-    scrolling=False,
 )
 
 st.markdown(
